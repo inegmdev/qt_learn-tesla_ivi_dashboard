@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>UI/BottomBar/BottomBar.qml</file>
+        <file>UI/RightScreen/RightScreen.qml</file>
+        <file>UI/LeftScreen/LeftScreen.qml</file>
     </qresource>
 </RCC>
