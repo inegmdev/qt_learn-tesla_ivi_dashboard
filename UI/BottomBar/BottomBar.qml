@@ -9,4 +9,17 @@ Rectangle {
     }
     height: parent.height / 12
     color: "black"
+
+    Image {
+        id: carSettingsIcon
+        source: "qrc:/UI/Assets/Icon-Car.png"
+        anchors {
+            left: parent.left
+            leftMargin: 30
+            verticalCenter: parent.verticalCenter
+        }
+
+        height: parent.height * 0.85
+        fillMode: Image.PreserveAspectFit
+    }
 }
