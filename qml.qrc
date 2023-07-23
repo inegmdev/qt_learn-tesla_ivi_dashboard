@@ -4,5 +4,6 @@
         <file>UI/BottomBar/BottomBar.qml</file>
         <file>UI/RightScreen/RightScreen.qml</file>
         <file>UI/LeftScreen/LeftScreen.qml</file>
+        <file>UI/Assets/Car.png</file>
     </qresource>
 </RCC>

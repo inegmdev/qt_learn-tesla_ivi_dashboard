@@ -13,12 +13,10 @@ Window {
 
     LeftScreen {
         id: leftScreen
-        color: "blue"
     }
 
     RightScreen {
         id: rightScreen
-        color: "orange"
     }
 
     BottomBar {
