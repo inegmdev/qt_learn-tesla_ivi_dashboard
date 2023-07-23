@@ -15,7 +15,10 @@ qt_add_executable(appTeslaIVI
 qt_add_qml_module(appTeslaIVI
     URI TeslaIVI
     VERSION 1.0
-    QML_FILES Main.qml UI/BottomBar/BottomBar.qml
+    QML_FILES
+        Main.qml
+        UI/BottomBar/BottomBar.qml
+        UI/RightScreen/RightScreen.qml
 )
 
 set_target_properties(appTeslaIVI PROPERTIES
