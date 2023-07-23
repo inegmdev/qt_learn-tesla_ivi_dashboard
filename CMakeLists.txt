@@ -19,6 +19,7 @@ qt_add_qml_module(appTeslaIVI
         Main.qml
         UI/BottomBar/BottomBar.qml
         UI/RightScreen/RightScreen.qml
+        UI/LeftScreen/LeftScreen.qml
 )
 
 set_target_properties(appTeslaIVI PROPERTIES

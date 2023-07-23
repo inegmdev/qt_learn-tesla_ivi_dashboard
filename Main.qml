@@ -1,8 +1,9 @@
 import QtQuick
 import QtQuick.Window
 
-import "UI/BottomBar"
 import "UI/RightScreen"
+import "UI/LeftScreen"
+import "UI/BottomBar"
 
 Window {
     width: 1200
@@ -12,6 +13,10 @@ Window {
 
     RightScreen {
         id: rightScreen
+    }
+
+    LeftScreen {
+        id: leftScreen
     }
 
     BottomBar {
