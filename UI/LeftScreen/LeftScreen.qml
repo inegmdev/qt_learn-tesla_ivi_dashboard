@@ -9,7 +9,7 @@ Rectangle {
         right: rightScreen.left
     }
 
-    color: "white"
+    color: "#fbfbfb"
 
     Image {
         id: imgCar

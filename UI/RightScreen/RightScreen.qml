@@ -147,4 +147,13 @@ Rectangle {
             text: systemHandler.driverName
         }
     }
+
+    NavigationSearchBox {
+        id: navSearchBox
+        anchors {
+            left: lockIcon.left
+            top: lockIcon.bottom
+            topMargin: 15
+        }
+    }
 }
