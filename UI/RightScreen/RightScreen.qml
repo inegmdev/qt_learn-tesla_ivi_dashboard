@@ -70,5 +70,20 @@ Rectangle {
                onActivated: map.zoomLevel = Math.round(map.zoomLevel - 1)
            }
        }
+    Image {
+        id: lockIcon
+        anchors {
+            left: parent.left
+            top: parent.top
+            margins: 20
+        }
+        width: parent.width / 40
+        fillMode: Image.PreserveAspectFit
+        source: (systemHandler.carLockedStatus ? "qrc:/UI/Assets/Icon-lock-padlock.png" : "qrc:/UI/Assets/Icon-unlock-padlock.png")
+        MouseArea {
+            anchors.fill: parent
+            onClicked: systemHandler.setCarLockedStatus (!systemHandler.carLockedStatus)
+        }
+    }
 
 }
