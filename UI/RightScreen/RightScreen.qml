@@ -119,4 +119,32 @@ Rectangle {
         color: uiConfig.fontColor
         text: systemHandler.outdoorTemp + "°C"
     }
+    Item {
+        id: driverNameDisplay
+        height: outdoorTempDisplay.height
+        anchors {
+            left: outdoorTempDisplay.right
+            leftMargin: uiConfig.spacingBetweenTopBarElements
+            bottom: lockIcon.bottom // Align the date and the lock icon
+        }
+        Image {
+            id: driverIcon
+            source : "qrc:/UI/Assets/Icon-User.png"
+            fillMode: Image.PreserveAspectFit
+            width: lockIcon.width
+        }
+
+        Text {
+            id: driverTextDisplay
+            anchors {
+                left: driverIcon.right
+                leftMargin: uiConfig.spacingBetweenTopBarElements / 3
+            }
+
+            font.pixelSize: uiConfig.fontSize
+            font.bold: uiConfig.fontBold
+            color: uiConfig.fontColor
+            text: systemHandler.driverName
+        }
+    }
 }
