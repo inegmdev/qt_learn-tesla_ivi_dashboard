@@ -15,13 +15,15 @@ public:
     explicit System(QObject *parent = nullptr);
 
     bool carLockedStatus() const;
-    Q_INVOKABLE void setCarLockedStatus(bool newCarLockedStatus);
 
     int outdoorTemp() const;
-    Q_INVOKABLE void setOutdoorTemp(int newOutdoorTemp);
 
     QString driverName() const;
-    Q_INVOKABLE void setDriverName(const QString &newDriverName);
+
+public slots:
+    void setCarLockedStatus(bool newCarLockedStatus);
+    void setOutdoorTemp(int newOutdoorTemp);
+    void setDriverName(const QString &newDriverName);
 
 signals:
 
