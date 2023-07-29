@@ -4,6 +4,14 @@ import QtLocation 5.11
 import QtPositioning 5.11
 
 Rectangle {
+
+    property var uiConfig: {
+        "fontSize": 14,
+        "fontBold": false,
+        "fontColor": "black",
+        "spacingBetweenTopBarElements": 15
+    }
+
     id: rightScreen
 
     anchors {
@@ -90,13 +98,25 @@ Rectangle {
         id: dateTimeDisplay
         anchors {
             left: lockIcon.right
-            leftMargin: 20
+            leftMargin: uiConfig.spacingBetweenTopBarElements
             bottom: lockIcon.bottom // Align the date and the lock icon
         }
-        font.pixelSize: 14
-        font.bold: false
-        color: "black"
+        font.pixelSize: uiConfig.fontSize
+        font.bold: uiConfig.fontBold
+        color: uiConfig.fontColor
         text: systemHandler.currentTime
     }
 
+    Text {
+        id: outdoorTempDisplay
+        anchors {
+            left: dateTimeDisplay.right
+            leftMargin: uiConfig.spacingBetweenTopBarElements
+            bottom: lockIcon.bottom // Align the date and the lock icon
+        }
+        font.pixelSize: uiConfig.fontSize
+        font.bold: uiConfig.fontBold
+        color: uiConfig.fontColor
+        text: systemHandler.outdoorTemp + "°C"
+    }
 }
