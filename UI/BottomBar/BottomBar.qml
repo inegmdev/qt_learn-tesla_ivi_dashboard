@@ -22,4 +22,26 @@ Rectangle {
         height: parent.height * 0.85
         fillMode: Image.PreserveAspectFit
     }
+
+    HvacComp {
+        id: driverHvacControl
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            left: parent.left
+            leftMargin: (leftScreen.width / 2) - (childrenRect.width / 2 + 10)
+        }
+        hvacTempController: driverHvacHandler
+    }
+
+    HvacComp {
+        id: passengerHvacControl
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            right: parent.right
+            rightMargin: (leftScreen.width / 2) - (childrenRect.width / 2 + 10)
+        }
+        hvacTempController: passengerHvacHandler
+    }
 }

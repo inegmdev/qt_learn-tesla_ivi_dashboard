@@ -11,5 +11,6 @@
         <file>UI/Assets/Icon-User.png</file>
         <file>UI/RightScreen/NavigationSearchBox.qml</file>
         <file>UI/Assets/Icon-Search.png</file>
+        <file>UI/BottomBar/HvacComp.qml</file>
     </qresource>
 </RCC>
