@@ -20,10 +20,11 @@ int main(int argc, char *argv[])
             if (!obj && url == objUrl)
                 QCoreApplication::exit(-1);
         }, Qt::QueuedConnection);
-    engine.load(url);
 
     QQmlContext * context(engine.rootContext());
     context->setContextProperty("systemHandler", &m_systemHandler);
 
+    // Load the QML inside the engine
+    engine.load(url);
     return app.exec();
 }
