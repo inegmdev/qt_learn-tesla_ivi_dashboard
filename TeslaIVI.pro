@@ -7,6 +7,7 @@ QT += quick
 SOURCES += \
         Controllers/hvachandler.cpp \
         Controllers/system.cpp \
+        Controllers/volctrlhandler.cpp \
         main.cpp
 
 RESOURCES += qml.qrc
@@ -24,4 +25,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     Controllers/hvachandler.h \
-    Controllers/system.h
+    Controllers/system.h \
+    Controllers/volctrlhandler.h

@@ -39,9 +39,18 @@ Rectangle {
         anchors {
             top: parent.top
             bottom: parent.bottom
-            right: parent.right
-            rightMargin: (leftScreen.width / 2) - (childrenRect.width / 2 + 10)
+            right: volCtrlControl.left
+            rightMargin: 250
         }
         hvacTempController: passengerHvacHandler
+    }
+
+    VolumeCtrlComp {
+        id: volCtrlControl
+        anchors {
+            right: parent.right
+            rightMargin: 50
+        }
+        volCtrlController: volCtrlHandler
     }
 }

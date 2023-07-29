@@ -4,6 +4,7 @@
 #include <QQmlContext>
 #include "Controllers/system.h"
 #include "Controllers/hvachandler.h"
+#include "Controllers/volctrlhandler.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +16,7 @@ int main(int argc, char *argv[])
     System m_systemHandler;
     HvacHandler m_driverHvacHandler;
     HvacHandler m_passengerHvacHandler;
+    VolCtrlHandler m_volCtrlHandler;
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
@@ -29,6 +31,7 @@ int main(int argc, char *argv[])
     context->setContextProperty("systemHandler", &m_systemHandler);
     context->setContextProperty("driverHvacHandler", &m_driverHvacHandler);
     context->setContextProperty("passengerHvacHandler", &m_passengerHvacHandler);
+    context->setContextProperty("volCtrlHandler", &m_volCtrlHandler);
 
     // Load the QML inside the engine
     engine.load(url);

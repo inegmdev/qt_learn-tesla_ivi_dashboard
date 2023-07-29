@@ -12,5 +12,10 @@
         <file>UI/RightScreen/NavigationSearchBox.qml</file>
         <file>UI/Assets/Icon-Search.png</file>
         <file>UI/BottomBar/HvacComp.qml</file>
+        <file>UI/Assets/Icons/Audio-Lvs/Icon-Audio-Lv3-Max.png</file>
+        <file>UI/Assets/Icons/Audio-Lvs/Icon-Audio-Lv0-Mute.png</file>
+        <file>UI/Assets/Icons/Audio-Lvs/Icon-Audio-Lv1.png</file>
+        <file>UI/Assets/Icons/Audio-Lvs/Icon-Audio-Lv2.png</file>
+        <file>UI/BottomBar/VolumeCtrlComp.qml</file>
     </qresource>
 </RCC>

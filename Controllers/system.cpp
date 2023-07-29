@@ -1,6 +1,8 @@
 #include "system.h"
 
 #include <QDateTime>
+
+#define __DEBUG__
 #ifdef __DEBUG__
 #include <QDebug>
 #endif
@@ -75,10 +77,6 @@ void System::updateCurrentTime()
 {
     QDateTime dateTime = QDateTime::currentDateTime();
     QString currentTime = dateTime.toString("hh:mmAP");
-
-#ifdef __DEBUG__
-    qDebug() << "Current time" << currentTime;
-#endif
 
     // Update the m_currentTime with the string
     setCurrentTime(currentTime);
