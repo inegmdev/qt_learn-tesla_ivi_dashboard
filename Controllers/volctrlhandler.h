@@ -15,6 +15,7 @@ public:
     int volumeLevel() const;
 
     Q_INVOKABLE void changeVolumeLevel(const int &diffVol);
+    Q_INVOKABLE void toggleMute();
 
 public slots:
 
@@ -26,6 +27,7 @@ signals:
 
 private:
     int m_volumeLevel;
+    int m_prevVolumeLevel;
 };
 
 #endif // VOLCTRLHANDLER_H

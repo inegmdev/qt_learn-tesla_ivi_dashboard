@@ -63,6 +63,11 @@ Item {
             rightMargin: uiConfig.inBetweenSpaces
             verticalCenter: parent.verticalCenter
         }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: volCtrlController.toggleMute()
+        }
     }
 
     Rectangle {
