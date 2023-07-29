@@ -86,4 +86,17 @@ Rectangle {
         }
     }
 
+    Text {
+        id: dateTimeDisplay
+        anchors {
+            left: lockIcon.right
+            leftMargin: 20
+            bottom: lockIcon.bottom // Align the date and the lock icon
+        }
+        font.pixelSize: 14
+        font.bold: false
+        color: "black"
+        text: systemHandler.currentTime
+    }
+
 }
