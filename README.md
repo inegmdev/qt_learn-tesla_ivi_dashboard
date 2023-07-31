@@ -1,10 +1,14 @@
-# QT {QML + CPP} Tesla IVI Clone
+# QT Tesla IVI Clone
 
 ## Motivation
 
 I have always wanted to start a side project to learn how to setup a QT app that does something (not too complex) as I am learning a new thing, (actually not really new, I have already used QT with python) but it was once and I did it really long ago.
 
 So I was motivated when I was doing something, well I can't say the exact reason because my manager won't like it :D "let the reader imagine". Anyway, I will let you with the real content here.
+
+Here is how the real UI looks like
+
+![1690835589150](image/README/1690835589150.png)
 
 ### Idea of The Program
 
@@ -52,7 +56,6 @@ Right screen should be the main context screen, and its purpose is to change dep
 ![lock-text-screenshot.gif](image/README/lock-text-screenshot.gif)
 ![map-screenshot.gif](image/README/map-screenshot.gif)
 
-
 #### Bottom Bar
 
 Bottom bar in the clone has some controls and a static icon of a car, here's the breakdown:
@@ -74,3 +77,5 @@ This is my improvements checklist that I love to add on any side-project, someti
 * [ ] **UI:** Add a slider when hovering or long press the sound icon to appear and precisely set the voltage instead of using buttons, via QSlider.
 * [ ] **Map:** Add searchable map using text and virtual keyboard, to be able to search places and set route destinations using QMap.
 * [ ] **Compilation**: Cross compile the QT application for ARM and run it on Linux image for Beagle Bone Black.
+* [ ] Using QT Designer to design the UIs.
+* [ ] Using Figma or Photoshop UI and create the QML exact UI from it.
